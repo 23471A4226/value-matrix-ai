@@ -1,73 +1,89 @@
-# Welcome to your Lovable project
+```markdown
+# Value Matrix AI
 
-## Project info
+A frontend application built with modern web tooling. This README provides a concise overview, development instructions, and deployment notes.
 
-**URL**: https://lovable.dev/projects/3745e677-90f1-448e-b59b-c3b137613cf1
+## Project overview
 
-## How can I edit this code?
+This repository contains the Value Matrix AI frontend application implemented with TypeScript and React, using Vite as the build tool and Tailwind CSS for styling.
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/3745e677-90f1-448e-b59b-c3b137613cf1) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
+## Technologies
 
 - Vite
 - TypeScript
 - React
-- shadcn-ui
 - Tailwind CSS
+- shadcn-ui (UI components)
 
-## How can I deploy this project?
+## Requirements
 
-Simply open [Lovable](https://lovable.dev/projects/3745e677-90f1-448e-b59b-c3b137613cf1) and click on Share -> Publish.
+- Node.js (recommended via nvm)
+- npm or pnpm
+- Git
 
-## Can I connect a custom domain to my Lovable project?
+Install nvm (optional, recommended) to manage Node versions:
+https://github.com/nvm-sh/nvm#installing-and-updating
 
-Yes, you can!
+## Quick start (local development)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+1. Clone the repository:
+```sh
+git clone <YOUR_GIT_URL>
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+2. Change into the project directory:
+```sh
+cd <YOUR_PROJECT_NAME>   # or cd value-matrix-ai-main
+```
+
+3. Install dependencies:
+```sh
+npm install
+# or
+# pnpm install
+```
+
+4. Start the development server:
+```sh
+npm run dev
+```
+
+The app will run on the local dev server shown in your terminal (typically http://localhost:5173).
+
+## Available scripts
+
+- npm run dev — start the dev server with hot reload
+- npm run build — build the production bundle
+- npm run preview — locally preview the production build (after build)
+- npm run lint — run linters (if configured)
+- npm run test — run tests (if configured)
+
+Adjust the scripts above if your project's package.json uses different names.
+
+## Build & deployment
+
+1. Build the app:
+```sh
+npm run build
+```
+
+2. Serve or deploy the contents of the `dist` directory to your hosting provider of choice (Netlify, Vercel, GitHub Pages, static hosting, container, etc.).
+
+If you use a platform-specific adapter or CI/CD, follow that platform's documentation to configure builds and environment variables.
+
+## Contributing
+
+- Create an issue for major changes or feature requests.
+- Fork the repository and create a topic branch for your change.
+- Open a pull request with a clear description of changes and motivation.
+
+Follow the repository's code style and testing guidelines when contributing.
+
+## License
+
+Add your license information here (e.g., MIT). If no license file exists yet, add one (LICENSE) and update this section.
+
+## Contact
+
+For questions about this repository, open an issue or contact the repository owner.
+```
