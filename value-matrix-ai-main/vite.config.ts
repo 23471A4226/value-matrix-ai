@@ -13,6 +13,10 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  // 👇 This ensures correct paths for deployment (important!)
-  base: "./",
+  // ✅ Correct base path for Vercel and most static hosts
+  base: "/",
+  build: {
+    outDir: "dist",
+    assetsDir: "assets",
+  },
 });
